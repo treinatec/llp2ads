@@ -49,7 +49,7 @@ jogador_tres.goto(-600, -170)
 dado = [1, 2, 3, 4, 5, 6]
 
 # ENTRADA
-turno_jogador_um = input("TURNO DO JOGADOR UM: Aperte <Enter> para rolar o dado!")
+turno_jogador = input("TURNO DO JOGADOR UM: Aperte <Enter> para rolar o dado!")
 # PROCESSAMENTO E SAÍDA
 dado_lancado = random.choice(dado)
 print(f"DADO LANÇADO DO JOGADOR UM: {dado_lancado}")
@@ -57,13 +57,13 @@ print(f"DADO LANÇADO DO JOGADOR UM: {dado_lancado}")
 jogador_um.forward(20*dado_lancado)
 print(f"JOGADOR UM ANDOU {20*dado_lancado} PASSOS")
 
-turno_jogador_dois = input("TURNO DO JOGADOR DOIS: Aperte <Enter> para rolar o dado!")
+turno_jogador = input("TURNO DO JOGADOR DOIS: Aperte <Enter> para rolar o dado!")
 dado_lancado = random.choice(dado)
 print(f"DADO LANÇADO DO JOGADOR DOIS: {dado_lancado}")
 jogador_dois.forward(20*dado_lancado)
 print(f"JOGADOR DOIS ANDOU {20*dado_lancado} PASSOS")
 
-turno_jogador_tres = input("TURNO DO JOGADOR TRÊS: Aperte <Enter> para rolar o dado!")
+turno_jogador = input("TURNO DO JOGADOR TRÊS: Aperte <Enter> para rolar o dado!")
 dado_lancado = random.choice(dado)
 print(f"DADO LANÇADO DO JOGADOR TRÊS: {dado_lancado}")
 jogador_tres.forward(20*dado_lancado)
